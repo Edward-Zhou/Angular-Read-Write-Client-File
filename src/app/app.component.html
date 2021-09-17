@@ -1,0 +1,30 @@
+<h1>Save File</h1>
+<h3>
+  <button mat-flat-button (click)="saveFileWithLink()" color="secondary">
+    构建`a`标签并自动化点击来实现下载
+  </button>
+</h3>
+<h3>
+  <button mat-flat-button (click)="saveFileWithFileSaver()" color="secondary">
+    通过`file-saver`实现下载
+  </button>
+</h3>
+
+<h3>
+  <button mat-flat-button (click)="file.click()" color="secondary">
+    Angular预定义事件绑定上传
+  </button>
+  <input
+    type="file"
+    id="file"
+    (change)="upload($event)"
+    style="display:none"
+    #file
+  />
+</h3>
+<h3>
+  <button mat-flat-button (click)="uploadDynamic()" color="secondary">
+    Angular动态绑定change事件
+  </button>
+  <input type="file" id="fileUpload" style="display:none" #fileUpload />
+</h3>
