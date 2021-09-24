@@ -1,30 +1,23 @@
-<h1>Save File</h1>
 <h3>
-  <button mat-flat-button (click)="saveFileWithLink()" color="secondary">
-    构建`a`标签并自动化点击来实现下载
+  <button mat-flat-button (click)="reproduceTest()" color="secondary">
+    问题重现
   </button>
 </h3>
 <h3>
-  <button mat-flat-button (click)="saveFileWithFileSaver()" color="secondary">
-    通过`file-saver`实现下载
+  <button
+    mat-flat-button
+    (click)="createObvervableSolutionTest()"
+    color="secondary"
+  >
+    通过创建Obvervable分布返回计算结果
   </button>
 </h3>
-
 <h3>
-  <button mat-flat-button (click)="file.click()" color="secondary">
-    Angular预定义事件绑定上传
+  <button
+    mat-flat-button
+    (click)="async_await_SolutionTest()"
+    color="secondary"
+  >
+    通过Async Await实现
   </button>
-  <input
-    type="file"
-    id="file"
-    (change)="upload($event)"
-    style="display:none"
-    #file
-  />
-</h3>
-<h3>
-  <button mat-flat-button (click)="uploadDynamic()" color="secondary">
-    Angular动态绑定change事件
-  </button>
-  <input type="file" id="fileUpload" style="display:none" #fileUpload />
 </h3>
